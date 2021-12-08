@@ -40,9 +40,7 @@ function App() {
   }
   return (
     <>
-      <Router>
-        {/* <Navbar/>  Here I set default value */}
-        
+      <Router>        
         <Navbar title="X-text" about="About us" mode={mode} ToggleMode={ToggleMode} />
         <Alert alert={alert} />
         <div className="container my-2">
