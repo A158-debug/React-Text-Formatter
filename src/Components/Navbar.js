@@ -1,7 +1,5 @@
-//react function based component I need  to write
 
 import React from 'react'  // rfc
-import {Link} from 'react-router-dom' 
 import PropTypes from 'prop-types'  //impt proptypes
 
 
@@ -15,18 +13,9 @@ export default function Navbar(props) {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/about">About Us</Link>
-              </li>
-            
-            </ul>
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.ToggleMode}/>
-              <label className={`form-check-label mx-1 text-${props.mode === 'light' ? 'dark' : 'light'}`} htmlfor="flexSwitchCheckDefault">Enable Dark Mode</label>
+              <label className={`form-check-label mx-1 text-${props.mode === 'light' ? 'dark' : 'light'}`} htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
             </div>
           </div>
         </div>

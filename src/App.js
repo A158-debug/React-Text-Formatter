@@ -1,7 +1,5 @@
-// import logo from './logo.svg';
-// import './App.css';
+
 import React, { useState } from 'react'
-import About from './Components/About';
 import Alert from './Components/Alert';
 import Navbar from './Components/Navbar'
 import TextForm from './Components/TextForm';
@@ -41,13 +39,10 @@ function App() {
   return (
     <>
       <Router>        
-        <Navbar title="X-text" about="About us" mode={mode} ToggleMode={ToggleMode} />
+        <Navbar title="X-text" mode={mode} ToggleMode={ToggleMode} />
         <Alert alert={alert} />
         <div className="container my-2">
           <Switch>
-            <Route exact path="/about">
-              <About about={About}/>
-            </Route>
             <Route exact path="/">
               <TextForm button_head="Convert To Upper Case" mode={mode} showAlert={showAlert} />
             </Route>
